@@ -1,0 +1,13 @@
+*.pyc
+*/__pycache__
+.vscode
+pyproject.toml
+
+build
+diff_rasterization/diff_rast.egg-info
+diff_rasterization/dist
+
+data
+output
+*/runs/
+*/runs_archive/

@@ -75,7 +75,7 @@ cd submodules/simple-knn/ && python -m pip install -e . && cd ../..
 Please download the dataset from [the link](https://drive.google.com/drive/folders/1vJ3le9lIGq8zl3ls1OzkBQ-rXLiSSc22?usp=drive_link) and put it in the `./data` directory. The dataset contains six scenes (excluding the Stump) from the [Mip-NeRF 360 dataset](https://jonbarron.info/mipnerf360/) and five scenes (waldo kitchen, bouquet, ramen, teatime and figurines) from the [LeRF dataset](https://www.lerf.io/). Segmentation masks are only provided for the evaluation set. 
 You can put the dataset anywhere you want, but you need to modify the `source_path` or `image_dir` in the config files.
 
-## Preproccess
+## Preproccessing
 
 We extract dense CLIP features and Dino featrues from multi-view images and concatenate them as the dense features. Then, we quantize them and save the feature indices (`xxx_encoding_indices.pt`) and codebook (`xxx_codebook.pt`) in the image root directory for training and evaluation. You can run the following command to preprocess the images. 
  
