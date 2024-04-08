@@ -15,8 +15,8 @@
 <div>
     <a href='https://arxiv.org/abs/2311.18482'>CVPR 2024</a>
 </div>
-<div>
 
+<div>
 <a target="_blank" href="https://arxiv.org/abs/2311.18482">
   <img src="https://img.shields.io/badge/arXiv-2311.18482-b31b1b.svg" alt="arXiv Paper"/>
 </a>
@@ -147,7 +147,7 @@ We use the `eval.py` script to evaluate the rendering results. Now, we need copy
 
 ```bash
 cp -r data/xxx/segmentations output/eval_xxx
-python lem_metrics.py --path output/eval_xxx
+python eval.py --path output/eval_xxx
 ```
 
 After evaluation, you can get the visual quality and language querying accuracy of the rendering results. And detailed results of language metrics will be saved in the `lem_metrics.json` and `mAP_metrics.json` in the output directory.
