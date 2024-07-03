@@ -174,10 +174,11 @@ Credits to the authors for their excellent contributions in the following works:
 
 If you find our code or paper useful, please consider citing:
 ```BibTeX
-@article{shi2023language,
-  title={Language Embedded 3D Gaussians for Open-Vocabulary Scene Understanding}, 
-  author={Jin-Chuan Shi and Miao Wang and Hao-Bin Duan and Shao-Hua Guan},
-  journal={arXiv preprint arXiv:2311.18482},
-  year={2023}
+@inproceedings{shi2024language,
+  title={Language embedded 3d gaussians for open-vocabulary scene understanding},
+  author={Shi, Jin-Chuan and Wang, Miao and Duan, Hao-Bin and Guan, Shao-Hua},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={5333--5343},
+  year={2024}
 }
 ```
