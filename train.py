@@ -83,7 +83,7 @@ def training(dataset, opt, pipe,
         index_decoder_ckpt = os.path.join(os.path.dirname(checkpoint), "index_decoder_" + os.path.basename(checkpoint))
         index_decoder.load_state_dict(torch.load(index_decoder_ckpt))
 
-    bg_color = [1, 1, 1] if dataset.white_background else [0, 0, 0]
+    bg_color = [1, 1, 1, 1,1,1,1,1,1,1,1,1] if dataset.white_background else [0, 0, 0, 0,0,0,0,0,0,0,0,0]
     background = torch.tensor(bg_color, dtype=torch.float32, device="cuda")
 
     iter_start = torch.cuda.Event(enable_timing = True)
