@@ -86,7 +86,7 @@ python quantize_features.py --config configs/mipnerf360/xxx.cfg
 
 The `xxx.cfg` is the config file for the specific scene. You can find the config files in the `./preprocess/configs/mipnerf360` directory. The `--config` argument specifies the config file you want to use. You can modify the config file to preprocess the features for other scenes or dataset.
 
-## Trianing
+## Training
 
 We use the `train.py` script to train the model. The config file specifies data and output paths, training hyperparameters, test set, and language feature indices path. The configs for the Mip-NeRF 360 dataset are in the `./configs/mipnerf360` directory. 
 
