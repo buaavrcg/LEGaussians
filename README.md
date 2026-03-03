@@ -163,6 +163,8 @@ Credits to the authors for their excellent contributions in the following works:
 ## Citation
 
 If you find our code or paper useful, please consider citing:
+
+**CVPR 2024 Version:**
 ```BibTeX
 @inproceedings{shi2024language,
   title={Language embedded 3d gaussians for open-vocabulary scene understanding},
@@ -170,5 +172,16 @@ If you find our code or paper useful, please consider citing:
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={5333--5343},
   year={2024}
+}
+```
+
+**TPAMI 2025 Extended Version:**
+```BibTeX
+@article{wang2025language,
+  title={Language Embedded 3D Gaussians for Open-Vocabulary Scene Querying},
+  author={Wang, Miao and Shi, Jin-Chuan and Guan, Shao-Hua and Duan, Hao-Bin},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2025},
+  publisher={IEEE}
 }
 ```
