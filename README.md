@@ -13,14 +13,17 @@
     <sup>2</sup>Zhongguancun Laboratory&emsp;
 </div>
 <div>
-    <a href='https://arxiv.org/abs/2311.18482'>CVPR 2024</a>
+    <a href='https://arxiv.org/abs/2311.18482'><strong>CVPR 2024</strong></a> | 
+    <a href='https://ieeexplore.ieee.org/abstract/document/11316374'><strong>TPAMI 2025</strong></a>
 </div>
 
 <div>
 <a target="_blank" href="https://arxiv.org/abs/2311.18482">
   <img src="https://img.shields.io/badge/arXiv-2311.18482-b31b1b.svg" alt="arXiv Paper"/>
 </a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fbuaavrcg%2FLEGaussians&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+<a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/11316374">
+  <img src="https://img.shields.io/badge/IEEE-TPAMI%202025-00629B.svg" alt="TPAMI Paper"/>
+</a>
 </div>
 
 <h4>TL;DR</h4>
@@ -36,19 +39,16 @@
 
 </div>
 
-***Abstract**: Open-vocabulary querying in 3D space is challenging but essential for scene understanding tasks such as object localization and segmentation. Language-embedded scene representations have made progress by incorporating language features into 3D spaces. However, their efficacy heavily depends on neural networks that are resource-intensive in training and rendering. Although recent 3D Gaussians offer efficient and high-quality novel view synthesis, directly embedding language features in them leads to prohibitive memory usage and decreased performance. In this work, we introduce **Language Embedded 3D Gaussians**, a novel scene representation for open-vocabulary query tasks. Instead of embedding high-dimensional raw semantic features on 3D Gaussians, we propose a dedicated quantization scheme that drastically alleviates the memory requirement, and a novel embedding procedure that achieves smoother yet high accuracy query, countering the multi-view feature inconsistencies and the high-frequency inductive bias in point-based representations. Our comprehensive experiments show that our representation achieves the best visual quality and language querying accuracy across current language-embedded representations, while maintaining real-time rendering frame rates on a single desktop GPU.*
+**Abstract**: Open-vocabulary querying in 3D space is challenging but essential for scene understanding tasks such as object localization and segmentation. Language-embedded scene representations have made progress by incorporating language features into 3D spaces. However, their efficacy heavily depends on neural networks that are resource-intensive in training and rendering. Although recent 3D Gaussians offer efficient and high-quality novel view synthesis, directly embedding language features in them leads to prohibitive memory usage and decreased performance. In this work, we introduce **Language Embedded 3D Gaussians**, a novel scene representation for open-vocabulary query tasks. Instead of embedding high-dimensional raw semantic features on 3D Gaussians, we propose a dedicated quantization scheme that drastically alleviates the memory requirement, and a novel embedding procedure that achieves smoother yet high accuracy query, countering the multi-view feature inconsistencies and the high-frequency inductive bias in point-based representations. Our comprehensive experiments show that our representation achieves the best visual quality and language querying accuracy across current language-embedded representations, while maintaining real-time rendering frame rates on a single desktop GPU.
 
-<details span>
-<summary><b>Update Log:</b></summary>
-<br>
+---
 
-**April 7, 2024**: 
-* Initial release of the LEGaussians repository.
+**📢 News**
 
-</details>
+- **[2026-03-03]** 🎉 Our extended work **"Language Embedded 3D Gaussians for Open-Vocabulary Scene Querying"** has been accepted by **IEEE TPAMI 2025**! See the paper [here](https://ieeexplore.ieee.org/abstract/document/11316374).
+- **[2024-04-07]** Initial release of the LEGaussians repository.
 
-<br>
-
+---
 
 ## Setup
 
@@ -151,16 +151,6 @@ python eval.py --path output/eval_xxx
 ```
 
 After evaluation, you can get the visual quality and language querying accuracy of the rendering results. And detailed results of language metrics will be saved in the `lem_metrics.json` and `mAP_metrics.json` in the output directory.
-
-## TODO List
-
-The repository is currently under construction. We appreciate your patience. Here's the TODO list:
-- [ ] Add quantization visualization scripts.
-- [ ] Add relevancy maps of text queries visualization scripts.
-- [ ] Add LeRF config files.
-- [ ] Upload pretrained models.
-  
-And if you have any questions or suggestions, please feel free to open an issue or a pull request. We are happy to help you.
 
 ## Acknowledgement
 
